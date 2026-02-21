@@ -2,10 +2,10 @@ const mysql = require('mysql2/promise');
 require('dotenv').config();
 
 const db = mysql.createPool({
-  host: process.env.MYSQLHOST || '127.0.0.1', 
-  user: process.env.MYSQLUSER || 'root',
-  password: process.env.MYSQLPASSWORD || 'turaab2011',
-  database: process.env.MYSQLDATABASE || 'testdb',
+  host: process.env.MYSQLHOST, 
+  user: process.env.MYSQLUSER,
+  password: process.env.MYSQLPASSWORD,
+  database: process.env.MYSQLDATABASE,
   port: process.env.MYSQLPORT || 3306,
   waitForConnections: true,
   connectionLimit: 10,
@@ -19,7 +19,7 @@ async function testConnection() {
     connection.release();
   } catch (err) {
     console.error('❌ DB connection error:', err.message);
-    setTimeout(testConnection, 4000); // Retry after 4s
+    // Removed auto-retry to prevent log spamming during crashes
   }
 }
 
