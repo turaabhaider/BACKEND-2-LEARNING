@@ -19,7 +19,7 @@ async function testConnection() {
     connection.release();
   } catch (err) {
     console.error('❌ DB connection error:', err.message);
-    // Removed auto-retry to prevent log spamming during crashes
+    
   }
 }
 
