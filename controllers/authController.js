@@ -1,8 +1,7 @@
 const db = require('../config/db');
 const bcrypt = require('bcrypt');
 const generateToken = require('../utils/generatetoken');
-
-
+//signup api hai bhai google sai bhi lai skta
 const signupUser = async (req, res) => {
   try {
     const { name, email, password } = req.body;
@@ -61,7 +60,7 @@ const signupUser = async (req, res) => {
     });
   }
 };
-
+//wehsai yeh wali api bhi google sai lai skta magar logic should be good
 const loginUser = async (req, res) => {
   try {
    

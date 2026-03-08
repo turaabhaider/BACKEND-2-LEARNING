@@ -1,7 +1,7 @@
 const db = require('../config/db');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
-
+//yeh bhi theek hi hai koi itni mushkil toh nhi
 const logoutUser = async (req, res) => {
   try {
     const authHeader = req.headers.authorization;

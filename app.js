@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-
+//fariq cheez hai bhai tu
 const authRoutes = require('./routes/authRoutes');
 const dashboardRoutes = require('./routes/dashboardRoutes');
 

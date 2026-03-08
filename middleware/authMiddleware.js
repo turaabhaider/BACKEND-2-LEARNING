@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 const db = require('../config/db');
 const bcrypt = require('bcrypt');
 require('dotenv').config();
-
+//yeh interesting hai zara
 const authMiddleware = async (req, res, next) => {
   try {
     const authHeader = req.headers.authorization;

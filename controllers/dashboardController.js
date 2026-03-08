@@ -1,6 +1,6 @@
 const db = require('../config/db');
 
-// Dashboard controller
+// Dashboard controller wali api interesting hai
 const getDashboard = async (req, res) => {
   try {
     
